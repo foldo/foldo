@@ -1,4 +1,4 @@
-export type FileInfo = {
+export declare type FileInfo = {
   contents: string,
   p: string,
   module: object
@@ -11,7 +11,7 @@ type AggregateOutput = {
   [key:string]: string | ((targets:[FileInfo])=>Promise<string>|string)
 }
 
-export type FoldoBuilder = {
+export declare type FoldoBuilder = {
   single?(id:string):SingleOutput,
   aggregate?:AggregateOutput
 }

@@ -254,7 +254,6 @@ function generateBuilder(input="", builds){
       info = x;
     }
     info.id = path.normalize(info.p.replace(process.cwd(),'').replace(input, ''));
-    info.id = info.id.substr(0,info.id.length - 3);
     return info
   };
 
