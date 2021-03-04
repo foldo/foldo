@@ -1,7 +1,7 @@
 export declare type FileInfo = {
   contents: string,
   p: string,
-  module: object
+  module: any
 }
 
 type Content = Promise<string>|string|undefined|null
