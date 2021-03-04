@@ -36,11 +36,6 @@ export function dev(config={}){
   for(let k in config){
     let builder = generateBuilder(k, config[k])
 
-    watch('routo.js')
-      .on('change', async (changed) => {
-        printer.warn('Config file changed, please restart routo')
-      })
-
     watch(k,watches_options)
       .on('ready', async (all) => {
         let output = await builder(all)

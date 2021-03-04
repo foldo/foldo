@@ -175,7 +175,7 @@ function isValidBuilder(b){
 function sanitize(config){
   let result = {};
   // ensure config is either an object or an array
-  if(!config || (typeof config !== 'obj' && !Array.isArray(config))){
+  if(!config || (typeof config != 'object' && !Array.isArray(config))){
     printer.error('Config must be an object or an array');
   }
   // force config into a flattened array
@@ -331,11 +331,6 @@ function dev(config={}){
 
   for(let k in config){
     let builder = generateBuilder(k, config[k]);
-
-    watches.watch('routo.js')
-      .on('change', async (changed) => {
-        printer.warn('Config file changed, please restart routo');
-      });
 
     watches.watch(k,watches_options)
       .on('ready', async (all) => {

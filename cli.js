@@ -5,6 +5,7 @@ const sade = require('sade');
 const pkg = require('./package.json');
 const path = require('path');
 const { build, dev } = require('./dist/index.js');
+const { watch } = require('watches')
 
 const cli = sade('foldo')
 
@@ -21,6 +22,8 @@ function parseConfig(path_to_config){
   console.log('Error loading config file: ' + path_to_config)
   return {}
 }
+
+
 
 cli
   .version(pkg.version)
@@ -39,6 +42,10 @@ cli
   .describe('Build the project and watch for changes')
   .action(({ c }) => {
     dev(parseConfig(c))
+    watch('foldo.js', { cache: require.cache })
+      .on('change', async (changed) => {
+        console.log('Config file changed, please restart foldo')
+      })
   })
 
 

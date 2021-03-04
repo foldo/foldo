@@ -18,7 +18,7 @@ function isValidBuilder(b){
 export function sanitize(config){
   let result = {}
   // ensure config is either an object or an array
-  if(!config || (typeof config !== 'obj' && !Array.isArray(config))){
+  if(!config || (typeof config != 'object' && !Array.isArray(config))){
     printer.error('Config must be an object or an array')
   }
   // force config into a flattened array
