@@ -1,0 +1,48 @@
+{
+  "version": "0.0.1",
+  "name": "foldo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foldo/foldo.git"
+  },
+  "description": "folder-based build system",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "bin": {
+    "foldo": "cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "ISC",
+  "author": {
+    "name": "Marshall Brandt",
+    "email": "hey@m4r.sh",
+    "url": "https://m4r.sh"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "keywords": [
+    "ssg",
+    "ssr",
+    "file",
+    "cli",
+    "builder",
+    "node"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "rollup": "^2.40.0"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "kleur": "^4.1.4",
+    "mk-dirs": "^3.0.0",
+    "sade": "^1.7.4",
+    "watches": "^0.2.4"
+  }
+}

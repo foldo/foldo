@@ -1,0 +1,8 @@
+node_modules
+brainstorming
+.DS_Store
+*-lock.*
+*.lock
+*.log
+.env
+
