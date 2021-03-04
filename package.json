@@ -12,8 +12,10 @@
     "foldo": "cli.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
+  "types": "types/index.d.ts",
   "license": "ISC",
   "author": {
     "name": "Marshall Brandt",
