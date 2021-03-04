@@ -4,11 +4,13 @@ export declare type FileInfo = {
   module: object
 }
 
+type Content = Promise<string>|string|undefined|null
+
 type SingleOutput = {
-  [key:string]: string | ((info:FileInfo)=>Promise<string>|string)
+  [key:string]: string | ((info:FileInfo)=>Content)
 }
 type AggregateOutput = {
-  [key:string]: string | ((targets:[FileInfo])=>Promise<string>|string)
+  [key:string]: string | ((targets:[FileInfo])=>Content)
 }
 
 export declare type FoldoBuilder = {
