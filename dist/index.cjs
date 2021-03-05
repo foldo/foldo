@@ -316,7 +316,7 @@ async function build(config){
   await Promise.all(
     Object.keys(config).map(async k => {
       let builder = generateBuilder(k, config[k]);
-      let all = watches.scan(k, watches_options);
+      let all = await watches.scan(k, watches_options);
       let new_builds = await builder(all);
       Object.assign(output, new_builds);
     })
