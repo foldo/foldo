@@ -142,21 +142,20 @@ function init(open, close) {
 	};
 }
 
-let { bold, dim } = $;
 let { log } = console;
 
 let printer = {
   warn(message){
-    log(`${$['yellow'](`◸!◿`)} ${dim(':')} ${message}`);
+    log(`${$['yellow'](`◸!◿`)} ${message}`);
   },
   error(message, e){
-    log(`${$['red'](`◸x◿`)} ${dim(':')} ${message}`);
+    log(`${$['red'](`◸x◿`)} ${message}`);
   },
   success(message){
-    log(`${$['green'](`◸✓◿`)} ${dim(':')} ${message}`);
+    log(`${$['green'](`◸✓◿`)} ${message}`);
   },
   info(message){
-    log(`${$['blue'](`◸/◿`)} ${dim(':')} ${message}`);
+    log(`${$['blue'](`◸/◿`)} ${message}`);
   }
 };
 

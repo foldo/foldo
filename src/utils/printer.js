@@ -4,15 +4,15 @@ let { log } = console
 
 export let printer = {
   warn(message){
-    log(`${kleur['yellow'](`◸!◿`)} ${dim(':')} ${message}`)
+    log(`${kleur['yellow'](`◸!◿`)} ${message}`)
   },
   error(message, e){
-    log(`${kleur['red'](`◸x◿`)} ${dim(':')} ${message}`)
+    log(`${kleur['red'](`◸x◿`)} ${message}`)
   },
   success(message){
-    log(`${kleur['green'](`◸✓◿`)} ${dim(':')} ${message}`)
+    log(`${kleur['green'](`◸✓◿`)} ${message}`)
   },
   info(message){
-    log(`${kleur['blue'](`◸/◿`)} ${dim(':')} ${message}`)
+    log(`${kleur['blue'](`◸/◿`)} ${message}`)
   }
 }

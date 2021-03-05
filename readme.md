@@ -14,35 +14,13 @@
 
 <h3 align="center">folder-based build system</h3>
 
-<p align="center">:construction: Work in progress :construction:</p>
-
-<div align="center">
-  <a href="#Usage"><b>Usage</b></a> | 
-  <a href="#API"><b>API</b></a> | 
-  <a href="#Examples"><b>Examples</b></a> | 
-  <a href="#Details"><b>Details</b></a>
-</div>
+<h3 align="center">:construction: Work in progress :construction:</h3>
 
 # Overview
 
 Foldo allows you to define custom builders for each source directory in your project in a config file (`foldo.js`).
 - `foldo dev` will watch source files and granularly rebuild affected outputs
 - `foldo build` will build all output files
-
-# Config
-
-Foldo expects an object (or array of objects) where keys denote the input directory, and values are the associated builders.
-
-Example:
-```js
-import { static } from '@foldo/static'
-import { md_to_html } from '@foldo/md'
-
-export default {
-  '/static': static({ out: '/public' }),
-  '/pages': md_to_html({ out: '/public' })
-}
-```
 
 # Features
 
@@ -52,7 +30,53 @@ export default {
 
 - Install size is minimal ![install size](https://badgen.net/packagephobia/install/foldo/?label=foldo&color=1A5)
 
-- Easy plugin system ([template](https://github.com/@foldo/template))
+- Easy plugin system ([template](https://github.com/foldo/template))
+
+# Config
+
+Foldo expects an object (or array of objects) where keys denote the input directory, and values are the associated builders.
+
+Example:
+```js
+import { copyTo } from '@foldo/static'
+
+export default {
+  // copies all files in /assets to /public
+  '/assets': copyTo('public', {
+    // ignore files/folders that start with _ or .
+    ignore: /(^|[\/\\])[\._]./
+  })
+}
+```
+
+# Possibilities
+
+Foldo was built to allow for a rich ecosystem of builders for custom project structures.
+
+**Builders**
+
+- Component Frameworks
+
+- Spritesheet generators
+
+- Markdown to HTML
+
+- Image Processing
+  - Images to Depthmaps
+  - Depthmaps to Slope fields
+  - Images to various pre-defined crops
+
+- Templates to HTML pages
+
+- JS files with image links to downloaded image files
+
+**Transforms**
+
+- Minification for specific file types
+
+- A11y & SEO checks for HTML files
+
+- Caniuse checks for CSS files
 
 ---
 
