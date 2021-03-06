@@ -8,11 +8,11 @@
     <img src="https://badgen.net/npm/v/foldo" alt="version" />
   </a>
   <a href="https://packagephobia.com/result?p=foldo">
-    <img src="https://badgen.net/packagephobia/install/foldo" alt="install size" />
+    <img src="https://badgen.net/packagephobia/install/foldo/?color=1A5" alt="install size" />
   </a>
 </div>
 
-<h3 align="center">folder-based build system</h3>
+<h3 align="center">folder-based build system for JS projects</h3>
 
 <h3 align="center">:construction: Work in progress :construction:</h3>
 
@@ -28,9 +28,9 @@ Foldo allows you to define custom builders for each source directory in your pro
 
 - Watches files *and their dependencies* for changes thanks to [`watches`](https://github.com/marshallcb/watches)
 
-- Install size is minimal ![install size](https://badgen.net/packagephobia/install/foldo/?label=foldo&color=1A5)
+- Simple + Expressive Config
 
-- Easy plugin system ([template](https://github.com/foldo/template))
+- Plugin-driven ([template](https://github.com/foldo/template))
 
 # Config
 
