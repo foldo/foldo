@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/foldo/foldo/raw/main/meta/foldo.png" alt="Foldo" width="60" />
+  <img src="https://github.com/foldo/foldo/raw/main/meta/foldo.png" alt="Foldo" width="120" />
 </div>
 
 <h1 align="center">foldo</h1>
