@@ -57,7 +57,11 @@ Foldo was built to allow for a rich ecosystem of builders for custom project str
 
 - Component Frameworks
 
+- Lambda Functions -> Platform-specific Code (Vercel, CloudFlare Workers, Netlify, AWS, etc)
+
 - Spritesheet generators
+
+- Pull data from API / CMS
 
 - Markdown to HTML
 
@@ -77,6 +81,8 @@ Foldo was built to allow for a rich ecosystem of builders for custom project str
 - A11y & SEO checks for HTML files
 
 - Caniuse checks for CSS files
+
+- Sitemap generator
 
 ---
 

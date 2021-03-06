@@ -1,6 +1,7 @@
 import { generateBuilder } from './builder'
 import { scan, watch } from 'watches'
-import { writeFile, printer, sanitize } from './utils'
+import { writeFile, sanitize } from './utils'
+import { printer } from './printer'
 
 // ignore . or _ prefixed folders or files
 let watches_options = {
@@ -55,3 +56,5 @@ export function dev(config={}){
   }
 
 }
+
+export {printer};

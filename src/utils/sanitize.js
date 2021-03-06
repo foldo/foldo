@@ -1,6 +1,6 @@
 import path from 'path'
 import { mergeObj } from './objHelpers';
-import { printer } from './printer'
+import { printer } from '../printer'
 
 function flatten(arr, d = Infinity) {
   return d > 0 ? arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val), [])

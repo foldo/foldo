@@ -133,20 +133,36 @@ function init(open, close) {
 	};
 }
 
+var events = require('events');
 let { log } = console;
+
+const em = new events.EventEmitter();
+
+em.on("success", (message) => {
+  log(`${$['green'](`◸✓◿`)} ${message}`);
+});
+em.on("info", (message) => {
+  log(`${$['blue'](`◸/◿`)} ${message}`);
+});
+em.on("warn", (message) => {
+  log(`${$['yellow'](`◸!◿`)} ${message}`);
+});
+em.on("error", (message) => {
+  log(`${$['red'](`◸x◿`)} ${message}`);
+});
 
 let printer = {
   warn(message){
-    log(`${$['yellow'](`◸!◿`)} ${message}`);
+    em.emit("warn", message);
   },
   error(message, e){
-    log(`${$['red'](`◸x◿`)} ${message}`);
+    em.emit("error", message);
   },
   success(message){
-    log(`${$['green'](`◸✓◿`)} ${message}`);
+    em.emit("success", message);
   },
   info(message){
-    log(`${$['blue'](`◸/◿`)} ${message}`);
+    em.emit("info", message);
   }
 };
 
@@ -341,4 +357,4 @@ function dev(config={}){
 
 }
 
-export { build, dev };
+export { build, dev, printer };
