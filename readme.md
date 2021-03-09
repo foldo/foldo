@@ -12,9 +12,9 @@
     <img src="https://badgen.net/packagephobia/install/foldo/?color=27D" alt="install size" />
   </a>
 </div>
-
+<br/>
 <div align="center">
-  <img src="https://github.com/foldo/foldo/raw/main/meta/build.gif" alt="How Foldo works" width=400 />
+  <img src="https://github.com/foldo/foldo/raw/main/meta/build.gif" alt="How Foldo works" width=600 />
 </div>
 
 # Overview
