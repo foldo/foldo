@@ -36,11 +36,15 @@ Foldo is a simple, framework-agnostic approach for building project files.
 
 # Motivation
 
-Foldo was made to give weekend warriors the power to create delightful developer tools without having to reinvent the wheel (file system logic, error handling, CLI, etc). Foldo also encourages a modular project structure without compromising a smooth DevX. Frameworks like `Next.js` and `Vite` are extremely easy to use, but quite difficult to customize since they have such a large scope. Foldo is intended to limit the scope of such frameworks and encourage modular alternatives.
+Foldo gives weekend warriors the power to create delightful developer tools without having to reinvent the wheel (file system logic, error handling, custom CLI, etc). Foldo also encourages a modular project structure without compromising a smooth DevX. Frameworks like `Next.js` and `Vite` are extremely easy to use, but quite difficult to customize since they have such a large scope. Foldo is intended to limit the scope of such frameworks and encourage modular alternatives.
 
 # Contributing
 
-Coming Soon
+- Report a bug
+- Suggest an idea
+- Develop a plugin
+- Create tutorials
+- Share on Twitter
 
 # License
 
