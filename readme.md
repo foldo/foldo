@@ -4,7 +4,6 @@
 
 <h1 align="center">foldo</h1>
 <h3 align="center">folder-based build system for JS projects</h3>
-<br/>
 <div align="center">
   <a href="https://npmjs.org/package/foldo">
     <img src="https://badgen.net/npm/v/foldo/?color=42D" alt="version" />
