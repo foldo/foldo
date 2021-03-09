@@ -15,9 +15,9 @@
 
 <h3 align="center">:construction: Work in progress :construction:</h3>
 
-# Overview
-
 ![How foldo works](https://github.com/foldo/foldo/raw/main/meta/build.gif "How foldo works")
+
+# Overview
 
 Foldo allows you to define custom builders for each source directory in your project in a config file (`foldo.js`).
 - `foldo dev` will watch source files and granularly rebuild affected outputs
