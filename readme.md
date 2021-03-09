@@ -19,7 +19,7 @@
 
 # Overview
 
-Foldo is a simple, framework-agnostic approach to building projects.
+Foldo is a simple, framework-agnostic approach for building project files.
 
 [Documentation](https://foldo.dev) | [Plugins](https://github.com/foldo/plugins) | [Examples](https://github.com/foldo/examples)
 
