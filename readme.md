@@ -5,10 +5,10 @@
 <h1 align="center">foldo</h1>
 <div align="center">
   <a href="https://npmjs.org/package/foldo">
-    <img src="https://badgen.net/npm/v/foldo/?color=32A" alt="version" />
+    <img src="https://badgen.net/npm/v/foldo/?color=54B" alt="version" />
   </a>
   <a href="https://packagephobia.com/result?p=foldo">
-    <img src="https://badgen.net/packagephobia/install/foldo/?color=51A" alt="install size" />
+    <img src="https://badgen.net/packagephobia/install/foldo/?color=23D" alt="install size" />
   </a>
 </div>
 
