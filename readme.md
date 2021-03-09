@@ -13,7 +13,9 @@
   </a>
 </div>
 
-![How foldo works](https://github.com/foldo/foldo/raw/main/meta/build.gif "How foldo works")
+<div align="center">
+  <img src="https://github.com/foldo/foldo/raw/main/meta/build.gif" alt="How Foldo works" width=400 />
+</div>
 
 # Overview
 
