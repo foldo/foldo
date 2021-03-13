@@ -46,6 +46,7 @@ export function generateBuilder(input="", builds){
 
   let aggregate = async function(all){
     let promised = {}
+    all = all.map(file_info)
     for(let k in aggregates){
       promised[k] = aggregates[k](all)
     }
